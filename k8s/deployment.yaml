@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ruyiij
+  name: rtgfbvb80
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ruyiij
+      app: rtgfbvb80
   template:
     metadata:
       labels:
-        app: ruyiij
+        app: rtgfbvb80
     spec:
       containers:
-      - image: okteto.dev/ruyiij:latest
-        name: ruyiij
+      - image: okteto.dev/rtgfbvb80:latest
+        name: rtgfbvb80
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "canva.com"
+          value: "clipchamp.com"
         - name: Vless_UUID
-          value: "68a03353-4dbf-48fa-8622-eef0e7143c63"
+          value: "c567a999-e663-4bf0-981f-7051bd3fe63a"
         - name: Vless_Path
-          value: "/sdcfvg"
+          value: "/doer45t"
         - name: Vmess_UUID
-          value: "68a03353-4dbf-48fa-8622-eef0e7143c63"
+          value: "c567a999-e663-4bf0-981f-7051bd3fe63a"
         - name: Vmess_Path
-          value: "/xdcfr5"
+          value: "/ythg7uy"
         - name: Share_Path
           value: "/share233"
