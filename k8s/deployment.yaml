@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ruyiij
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ruyiij
+  template:
+    metadata:
+      labels:
+        app: ruyiij
+    spec:
+      containers:
+      - image: okteto.dev/ruyiij:latest
+        name: ruyiij
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "canva.com"
+        - name: Vless_UUID
+          value: "68a03353-4dbf-48fa-8622-eef0e7143c63"
+        - name: Vless_Path
+          value: "/sdcfvg"
+        - name: Vmess_UUID
+          value: "68a03353-4dbf-48fa-8622-eef0e7143c63"
+        - name: Vmess_Path
+          value: "/xdcfr5"
+        - name: Share_Path
+          value: "/share233"
