@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bghn7hu7
+  name: mkijngg
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bghn7hu7
+      app: mkijngg
   template:
     metadata:
       labels:
-        app: bghn7hu7
+        app: mkijngg
     spec:
       containers:
-      - image: okteto.dev/bghn7hu7:latest
-        name: bghn7hu7
+      - image: okteto.dev/mkijngg:latest
+        name: mkijngg
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "canva.com"
         - name: Vless_UUID
-          value: "27e1f9e1-3d1d-45ad-be1a-37a517dec5f3"
+          value: "97be42cf-3115-49ed-af73-03c0555bd827"
         - name: Vless_Path
-          value: "/edrfccvx"
+          value: "/enr889tfc"
         - name: Vmess_UUID
-          value: "27e1f9e1-3d1d-45ad-be1a-37a517dec5f3"
+          value: "97be42cf-3115-49ed-af73-03c0555bd827"
         - name: Vmess_Path
-          value: "/34dcqas"
+          value: "/n6gythhy9"
         - name: Share_Path
           value: "/share233"
