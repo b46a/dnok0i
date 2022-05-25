@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dofuner
+  name: hsodlp0
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dofuner
+      app: hsodlp0
   template:
     metadata:
       labels:
-        app: dofuner
+        app: hsodlp0
     spec:
       containers:
-      - image: okteto.dev/dofuner:latest
-        name: dofuner
+      - image: okteto.dev/hsodlp0:latest
+        name: hsodlp0
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "clipchamp.com"
+          value: "canva.com"
         - name: Vless_UUID
-          value: "d0cde382-a5df-477a-8b55-dca679d96050"
+          value: "a029c4d9-aa06-4976-8ebe-23164f988976"
         - name: Vless_Path
-          value: "/erfdr5t6"
+          value: "/lqwae3er"
         - name: Vmess_UUID
-          value: "d0cde382-a5df-477a-8b55-dca679d96050"
+          value: "a029c4d9-aa06-4976-8ebe-23164f988976"
         - name: Vmess_Path
-          value: "/e3wdef4"
+          value: "/bhnn8ujip"
         - name: Share_Path
           value: "/share233"
