@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rtgfbvb80
+  name: dofuner
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: rtgfbvb80
+      app: dofuner
   template:
     metadata:
       labels:
-        app: rtgfbvb80
+        app: dofuner
     spec:
       containers:
-      - image: okteto.dev/rtgfbvb80:latest
-        name: rtgfbvb80
+      - image: okteto.dev/dofuner:latest
+        name: dofuner
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "clipchamp.com"
         - name: Vless_UUID
-          value: "c567a999-e663-4bf0-981f-7051bd3fe63a"
+          value: "d0cde382-a5df-477a-8b55-dca679d96050"
         - name: Vless_Path
-          value: "/doer45t"
+          value: "/erfdr5t6"
         - name: Vmess_UUID
-          value: "c567a999-e663-4bf0-981f-7051bd3fe63a"
+          value: "d0cde382-a5df-477a-8b55-dca679d96050"
         - name: Vmess_Path
-          value: "/ythg7uy"
+          value: "/e3wdef4"
         - name: Share_Path
           value: "/share233"
