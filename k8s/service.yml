@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vfrd43s
+  name: refrg1
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "vfrd43s"
+  - name: "refrg1"
     port: 8080
   selector:
-    app: vfrd43s
+    app: refrg1
